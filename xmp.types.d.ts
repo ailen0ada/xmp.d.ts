@@ -1,4 +1,4 @@
-/// <reference path="./xmp.constants.d.ts" />
+Ôªø/// <reference path="./xmp.constants.d.ts" />
 /// <reference path="./lib.d.ts" />
 
 /**
@@ -515,7 +515,7 @@ declare class XMPUtils {
     composeArrayItemPath(schemaNS: XMPConst, arrayName: string, itemIndex: number): string;
 
     /**
-     * Creates and returns a string containing the path expression to select an alternate item by a fieldÅfs value, using the registered prefixes for the namespaces, in the form: schemaNS:arrayName[fieldNS:fieldName=ÅffieldValueÅf] 
+     * Creates and returns a string containing the path expression to select an alternate item by a field‚Äôs value, using the registered prefixes for the namespaces, in the form: schemaNS:arrayName[fieldNS:fieldName='fieldValue'] 
      * @param schemaNS The namespace URI string.
 	 * @param arrayName The array-type property name string. Can be a general path expression. 
      * @param fieldNS The field namespace URI string.
@@ -525,7 +525,7 @@ declare class XMPUtils {
     composeFieldSelector(schemaNS: XMPConst, arrayName: string, fieldNS: XMPConst, fieldName: string, fieldValue: any): string;
 
     /**
-     * Creates and returns a string containing the path expression to select an alternate item in an alt text array by language, using the registered prefix for the namespace, in the form: schemaNS:arrayName[@xml:lang=ÅflangNameÅf]
+     * Creates and returns a string containing the path expression to select an alternate item in an alt text array by language, using the registered prefix for the namespace, in the form: schemaNS:arrayName[@xml:lang='langName']
      * Do not use this in place of getLocalizedText() or setLocalizedText().
      * Those functions provide extra logic to choose the appropriate language and maintain consistency with the x-default value.
      * This function provides a path expression for an explicit language, and only for that language.

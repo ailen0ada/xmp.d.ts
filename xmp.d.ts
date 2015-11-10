@@ -10,7 +10,7 @@ declare class ExternalObject {
      * @param filespec The specifier "lib:" is case sensitive, and serves as the marker for dynamic libraries. 
      * Concatenate this to the base name of the shared library, with or without an extension. 
      * ExtendScript appends a file extension if necessary, according to the operating system: .dll in Windows, .bundle or .framework in OSX, .so in UNIX.
-     * @param args Any number of arguments to pass to the library�fs initialization routine.
+     * @param args Any number of arguments to pass to the library's initialization routine.
      */
     constructor(filespec: string, ...args: any[]);
 
@@ -37,7 +37,7 @@ declare class ExternalObject {
      * @returns true if the library is found, false otherwise.
      */
     static search(spec: string): boolean;
-    
+
     /** for Adobe XMP Scripting api */
     static AdobeXMPScript: ExternalObject;
 
