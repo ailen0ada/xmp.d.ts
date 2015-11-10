@@ -2,6 +2,8 @@
  * This object contains the read-only constant definitions for use with the JavaScript XMP API.
  */
 declare enum XMPConst {
+	/** Indicates Zero or Unknown type. */
+	UNKNOWN,
 	/**  The XML namespace for the Dublin Core schema, http://purl.org/dc/elements/1.1 */
 	NS_DC,
 	/** The XML namespace for the IPTC Core schema. */
